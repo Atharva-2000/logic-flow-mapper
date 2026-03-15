@@ -4,7 +4,7 @@ import { useLogicStore } from '../store/logicStore';
 
 export const SimulationPanel: React.FC = () => {
   const simulationResult = useLogicStore((s) => s.simulationResult);
-  const nodes = useLogicStore((s) => s.nodes);
+  //const nodes = useLogicStore((s) => s.nodes);
   const clearSimulation = useLogicStore((s) => s.clearSimulation);
 
   if (!simulationResult) return null;
@@ -35,7 +35,7 @@ export const SimulationPanel: React.FC = () => {
       {/* Steps */}
       <div className="overflow-y-auto flex-1 p-3 space-y-1.5">
         {steps.map((step, i) => {
-          const node = nodes[step.nodeId];
+          //const node = nodes[step.nodeId];
           const isLast = i === steps.length - 1;
           return (
             <div

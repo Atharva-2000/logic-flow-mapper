@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import { useCallback } from 'react';
 import { useLogicStore } from './store/logicStore';
 import { LogicNodeCard } from './components/LogicNodeCard';
 import { Toolbar } from './components/Toolbar';
